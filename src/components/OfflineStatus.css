@@ -1,0 +1,110 @@
+
+.connection-notice {
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  z-index: 3000;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  width: max-content;
+  max-width: calc(100% - 32px);
+  min-height: 52px;
+
+  padding: 12px 18px;
+
+  border: 1px solid;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 28px rgba(16, 24, 39, 0.12);
+
+  transform: translateX(-50%);
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  animation: connection-enter 200ms ease-out;
+}
+
+.connection-offline {
+  color: #263751;
+  background: #f3f5f8;
+  border-color: #d8dee8;
+}
+
+.connection-online {
+  color: #24563e;
+  background: #edf6f0;
+  border-color: #cce5d4;
+}
+
+.connection-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  width: 27px;
+  height: 27px;
+
+  border-radius: 8px;
+}
+
+.connection-offline .connection-indicator {
+  color: #64748b;
+  background: #e4e9f0;
+}
+
+.connection-online .connection-indicator {
+  color: #28744c;
+  background: #dcefe2;
+}
+
+.connection-indicator svg {
+  width: 17px;
+  height: 17px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.connection-message {
+  overflow-wrap: anywhere;
+}
+
+@keyframes connection-enter {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media (max-width: 480px) {
+  .connection-notice {
+    top: 12px;
+
+    width: calc(100% - 24px);
+    max-width: 420px;
+
+    padding: 11px 13px;
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .connection-notice {
+    animation: none;
+  }
+}

@@ -1,0 +1,39 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220">
+  <title>ZreaxerTools</title>
+  <desc>Minimal ve modern ZreaxerTools logosu</desc>
+
+  <g transform="translate(10 10)">
+    <rect width="200" height="200" rx="42" fill="#101827"/>
+
+    <path
+      d="M48 48H152V77L82 123H152V152H48V123L118 77H48Z"
+      fill="#F4F6FA"
+    />
+
+    <path
+      d="M123 123H152V152H123Z"
+      fill="#6D8FCB"
+    />
+  </g>
+
+  <text
+    x="250"
+    y="139"
+    font-family="Arial, sans-serif"
+    font-size="88"
+    font-weight="700"
+    letter-spacing="-3"
+    fill="#101827"
+  >Zreaxer</text>
+
+  <text
+    x="604"
+    y="139"
+    font-family="Arial, sans-serif"
+    font-size="88"
+    font-weight="400"
+    letter-spacing="-3"
+    fill="#6D8FCB"
+  >Tools</text>
+</svg>

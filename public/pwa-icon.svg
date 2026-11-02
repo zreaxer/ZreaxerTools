@@ -1,0 +1,10 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>ZreaxerTools Application Icon</title>
+  <rect width="512" height="512" rx="112" fill="#101827"/>
+  <path
+    d="M125 125H387V198L210 314H387V387H125V314L302 198H125Z"
+    fill="#F4F6FA"
+  />
+  <path d="M314 314H387V387H314Z" fill="#6D8FCB"/>
+</svg>
